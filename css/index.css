@@ -1,21 +1,11 @@
-body{
+body {
     background-color: #beaeae;
-}
-
-body{
     color: #333;
-}
-
-body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
 }
 
-section{ 
+section {
     margin-bottom: 30px;
-}
-
-section{
     text-align: left;
 }
 
@@ -25,7 +15,7 @@ h1, h2 {
     color: #007;
 }
 
-.name{
+.name {
     font-size: 48px;
     font-weight: bold;
     color: darkcyan;
@@ -33,25 +23,51 @@ h1, h2 {
 }
 
 .Experience {
-    list-style: none;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .Experience li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color: #beaeae;
     padding: 10px;
     margin-bottom: 5px;
 }
 
-.Connect li {
-display: inline-block;
-background-color: rgb(87, 128, 34);
-color: #fff;
-padding: 5px 10px;
-margin-right: 10px;
-text-decoration: none;
+.Experience li .job-title {
+    flex: 1;
+    font-weight: bold;
 }
 
-.Connect li:hover{
+.Experience li .dates {
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+.Experience li p {
+    margin-top: 10px;
+}
+
+.Connect ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.Connect li {
+    margin-right: 10px;
+}
+
+.Connect a {
+    display: inline-block;
+    background-color: rgb(32, 51, 116);
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.Connect a:hover {
     background-color: darkblue;
 }
