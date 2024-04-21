@@ -1,73 +1,57 @@
 body {
-    background-color: #beaeae;
-    color: #333;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #beaeae;
+}
+
+body {
+  color: #333;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 section {
-    margin-bottom: 30px;
-    text-align: left;
+  margin-bottom: 30px;
 }
 
-h1, h2 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #007;
+section {
+  text-align: left;
+}
+
+h1,
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007;
 }
 
 .name {
-    font-size: 48px;
-    font-weight: bold;
-    color: darkcyan;
-    text-transform: uppercase;
+  font-size: 48px;
+  font-weight: bold;
+  color: darkcyan;
+  text-transform: uppercase;
 }
 
 .Experience {
-    display: flex;
-    flex-direction: column;
+  list-style: none;
+  padding: 0;
 }
 
 .Experience li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #beaeae;
-    padding: 10px;
-    margin-bottom: 5px;
-}
-
-.Experience li .job-title {
-    flex: 1;
-    font-weight: bold;
-}
-
-.Experience li .dates {
-    margin-left: auto;
-    margin-right: 100px;
-}
-
-.Experience li p {
-    margin-top: 10px;
-}
-
-.Connect ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
+  background-color: #beaeae;
+  padding: 10px;
+  margin-bottom: 5px;
 }
 
 .Connect li {
-    margin-right: 10px;
+  display: inline-block;
+  background-color: rgb(87, 128, 34);
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 10px;
+  text-decoration: none;
 }
 
-.Connect a {
-    display: inline-block;
-    background-color: rgb(32, 51, 116);
-    color: #fff;
-    padding: 5px 10px;
-    text-decoration: none;
-}
-
-.Connect a:hover {
-    background-color: darkblue;
+.Connect li:hover {
+  background-color: darkblue;
 }
