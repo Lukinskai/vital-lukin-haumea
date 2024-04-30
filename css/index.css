@@ -43,6 +43,12 @@ h2 {
   margin-bottom: 5px;
 }
 
+.job-one {
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+}
+
 .Connect li {
   display: inline-block;
   background-color: rgb(87, 128, 34);
@@ -54,4 +60,10 @@ h2 {
 
 .Connect li:hover {
   background-color: darkblue;
+}
+
+@media screen and (min-width: 480px) {
+    .job-one {
+        flex-direction: row;
+    }
 }
