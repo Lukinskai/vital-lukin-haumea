@@ -3,11 +3,7 @@
 const footer = document.createElement("footer");
 //footer.textContent = "My Footer";
 
-//get the body element
-
 const body = document.body;
-
-// Append the footer to the body
 
 body.appendChild(footer);
 
@@ -29,7 +25,6 @@ const copyright = document.createElement('p');
 
 copyright.innerHTML = "Vital Lukin &copy;" + thisYear;
 
-//append the copy to the footer
 
 footer.appendChild(copyright);
 
@@ -106,3 +101,50 @@ messageForm.addEventListener('submit', function(event) {
      event.target.reset();
 
 });
+
+///lesson-15
+
+
+// 'MY_GITHUB_USERNAME'
+const myUsername = 'Lukinskai';
+
+// Make a GET request to fetch repository 
+fetch(`https://api.github.com/users/${myUsername}/repos`)
+    .then(response => {
+        // Check if the request was successful
+        if (!response.ok) {
+            throw new Error('Network response was not ok, check Username');
+        }
+     
+        return response.json();
+    })
+    .then(data => {
+       
+        console.log(data);
+        
+        const repositories = data;
+       
+        console.log('Repositories:', repositories);
+
+        /// Repos in List
+       
+        const projectSection = document.getElementById('Projects');
+      
+        const projectList = projectSection.querySelector('ul');
+
+       
+        for (let i = 0; i < repositories.length; i++) {
+          
+            const project = document.createElement('li');
+           
+            project.innerText = repositories[i].name;
+           
+            projectList.appendChild(project);
+        }
+    })
+    .catch(error => {
+
+        console.error('Error:', error);
+     
+        alert('An error occurred. Please try again later.');
+    });
