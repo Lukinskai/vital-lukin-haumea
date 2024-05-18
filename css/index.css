@@ -112,10 +112,25 @@ a {
   border-radius: 0.8em;
   }
 
+textarea {
+vertical-align: top;
+min-height: 150px;
+resize: none;
+height: auto;
+  }
+
+.message_box {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
+
 
   /* Tablet Styles */
   #name {
@@ -131,7 +146,17 @@ a {
       gap: 10px; /* Space between rows and columns */
   }
 
+
 }
+
+
+@media screen and (max-width: 768px) {
+  .message_box {
+    width: 100%;
+  }
+
+}
+
 
 @media screen and (min-width: 1024px) {
 
