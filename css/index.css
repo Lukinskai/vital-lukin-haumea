@@ -1,11 +1,12 @@
 /* Base styles */
 body {
-  font-family: 'Franklin Gothic Medium', sans-serif;
+  font-family: "Franklin Gothic Medium", sans-serif;
   height: 100vh;
   background-color: rgba(152, 170, 170, 0.994);
   margin: 0;
   padding: 0;
 }
+
 /* Navigation */
 #navigation {
   background-color: #6d6363;
@@ -53,14 +54,14 @@ img {
 /* Sections */
 section {
   padding: 1rem 2rem;
-  margin-bottom: 2,5rem;
+  margin-bottom: 2, 5rem;
 }
 h2 {
-    font-weight: bold;
-    font-size: 2rem;
+  font-weight: bold;
+  font-size: 2rem;
 }
 a {
-    color: rgb(247, 252, 249);
+  color: rgb(247, 252, 249);
 }
 
 /* About Section */
@@ -76,15 +77,15 @@ a {
 
 /* Experience Section */
 #Experience ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0.5em;
-    background-color: rgb(219, 230, 122);
-    color: rgb(90, 58, 7);
-    padding: 1cm;
-    border-radius: 0.5em;
-    border-color: rgb(68, 18, 115);
-    border-style: solid;
+  list-style: none;
+  display: inline-block;
+  margin: 0.5em;
+  background-color: rgb(219, 230, 122);
+  color: rgb(90, 58, 7);
+  padding: 1cm;
+  border-radius: 0.5em;
+  border-color: rgb(68, 18, 115);
+  border-style: solid;
 }
 .grid-container {
   display: grid;
@@ -94,7 +95,7 @@ a {
 .grid-item {
   display: flex;
   flex-direction: row;
-  background-color:rgb(105, 108, 108);
+  background-color: rgb(105, 108, 108);
   color: white;
   border-radius: 0.8em;
   padding: 0.5em;
@@ -109,16 +110,15 @@ a {
   min-width: fit-content;
 }
 #skills ul {
-list-style: none;
-display: flex;
-gap: 20px;
-padding: 0;
-flex-wrap: wrap;
-
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
 #skills ul li {
-  background-color:rgb(105, 108, 108);
+  background-color: rgb(105, 108, 108);
   color: white;
   border-radius: 0.8em;
   padding: 0.5em;
@@ -126,7 +126,6 @@ flex-wrap: wrap;
   width: 100px;
   text-align: center;
 }
-
 
 /* Connect Section */
 #connect {
@@ -137,14 +136,14 @@ flex-wrap: wrap;
   color: whitesmoke;
   background-color: aqua;
   border-radius: 0.8em;
-  }
+}
 
 textarea {
-vertical-align: top;
-min-height: 150px;
-resize: none;
-height: auto;
-  }
+  vertical-align: top;
+  min-height: 150px;
+  resize: none;
+  height: auto;
+}
 
 .message_box {
   width: 400px;
@@ -152,45 +151,37 @@ height: auto;
   flex-direction: column;
 }
 
-
-footer { 
-text-align: center;
-padding: 15px 0;
+footer {
+  text-align: center;
+  padding: 15px 0;
 }
-
 
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
-
-
   /* Tablet Styles */
   #name {
-      font-size: 3rem; /* 1st change */
+    font-size: 3rem; /* 1st change */
   }
 
   h2 {
-      font-size: 3rem; /* 1st change */
+    font-size: 3rem; /* 1st change */
   }
 
   .grid-container {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 10px; /* Space between rows and columns */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px; /* Space between rows and columns */
   }
-
-
 }
-
 
 @media screen and (max-width: 768px) {
   .message_box {
     width: 100%;
   }
-  
+
   img {
     height: 300px;
     width: 296px;
-
   }
   #About .about-container {
     display: flex;
@@ -198,15 +189,11 @@ padding: 15px 0;
   }
 }
 
-
 @media screen and (max-width: 360px) {
-
   img {
     width: 100%;
-    
   }
 
- 
   #navigation ul {
     list-style-type: none;
     margin: 0;
@@ -214,12 +201,12 @@ padding: 15px 0;
     display: flex;
     justify-content: space-between;
   }
-  
+
   #navigation ul li {
     /*flex: 1;*/
     text-align: center;
   }
-  
+
   #navigation ul li a {
     color: #fff;
     text-decoration: none;
@@ -227,19 +214,16 @@ padding: 15px 0;
 }
 
 @media screen and (min-width: 1024px) {
-
   /* Desktop Styles */
   #navigation ul li {
-      margin-right: 20px; /* 1st change */
+    margin-right: 20px; /* 1st change */
   }
 
   #name {
-      font-size: 4rem; /* 1st change */
+    font-size: 4rem; /* 1st change */
   }
 
   h2 {
-      font-size: 4rem; /* 1st change */
+    font-size: 4rem; /* 1st change */
   }
-} 
-
- 
+}
