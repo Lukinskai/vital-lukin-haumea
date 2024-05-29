@@ -61,6 +61,10 @@ messageForm.addEventListener("submit", function (event) {
 
   const messageSection = document.getElementById("messages");
 
+  const messageHeader = messageSection.querySelector("h2");
+  //console.log("messageHeader ====> ", messageHeader);
+  messageHeader.innerText = "Messages";
+
   const messageList = messageSection.querySelector("ul");
 
   const newMessage = document.createElement("li");
