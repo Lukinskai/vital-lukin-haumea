@@ -28,7 +28,7 @@ copyright.innerHTML = "Vital Lukin &copy;" + thisYear;
 
 footer.appendChild(copyright);
 
-///Skills 
+///Skills //array
 
 const skills =["JavaScript","HTML","CSS","Java","Git"];
 
