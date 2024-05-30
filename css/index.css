@@ -128,14 +128,24 @@ a {
 }
 
 /* Connect Section */
-#connect {
+
+#Connect ul {
+  list-style: none;
   display: flex;
-  flex-direction: row;
-  margin: 1em;
-  padding: 0.5em;
-  color: whitesmoke;
-  background-color: aqua;
+  gap: 20px;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+
+#Connect ul li {
+  background-color: rgb(105, 108, 108);
+  color: white;
   border-radius: 0.8em;
+  padding: 0.5em;
+  /*height: 25px;*/
+  width: 100px;
+  text-align: center;
 }
 
 textarea {
