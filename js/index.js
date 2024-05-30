@@ -93,7 +93,7 @@ messageForm.addEventListener("submit", function (event) {
   event.target.reset();
 });
 
-///lesson-15
+///lesson-15 / Projects
 
 // 'MY_GITHUB_USERNAME'
 const myUsername = "Lukinskai";
